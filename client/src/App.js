@@ -1,20 +1,21 @@
-import logo from './logo.png';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import Navigation from './routes/navigation/navaigation.components'
+import Home from './routes/home/home.components'
+import About from './routes/about/about.components'
+import Projects from './routes/projects/projects.components'
+import Contact from './routes/contact/contact.componets'
 
-function App() {
+const App = () => { 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Home of my future Portfolio
-          <br /> For now visit my github
-          <br />
-          <a href="https://github.com/whitlocktech">whitlocktech</a> 
-        </p>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route pather="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Route>
+    </Routes>
+  )
 }
 
-export default App;
+export default App

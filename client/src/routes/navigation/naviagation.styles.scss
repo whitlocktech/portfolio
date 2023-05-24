@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  background-color: #5C5C5C;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+    scale: 0.25;
+}
+
+.links-container {
+  font-family: Prompt;
+  display:inline-flex;
+  justify-content: flex-end;
+  flex: 1;
+  width: 100%;
+  padding: 10px 15px;
+
+}
+.nav-links {
+  font-family: Prompt;
+  padding: 0 10px;
+  color: #fff;
+}
