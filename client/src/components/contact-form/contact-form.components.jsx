@@ -34,7 +34,6 @@ const ContactForm = () => {
   }
   return (
     <div className="contact-form">
-      <h1 className='contact-form'>Contact</h1>
       <br />
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -61,11 +60,13 @@ const ContactForm = () => {
           name='message'
           value={message}
         />
-        <div className='buttons'>
-          <button type='submit'>Submit</button>
-          <button type='button' onClick={resetFormFields}>Reset</button>
+        <div className='myButtonContainer'>
+          <button type='submit' className='myButton'>Submit</button>
+          <button type='button' onClick={resetFormFields} className='myButton'>Reset</button>
         </div>
       </form>
     </div>
   )
 }
+
+export default ContactForm
